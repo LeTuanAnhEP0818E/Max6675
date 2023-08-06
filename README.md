@@ -16,3 +16,4 @@ npm i max6675-raspi --save
 
 [![rpiblusleaf](https://raw.githubusercontent.com/splitbrain/rpibplusleaf/master/rpiblusleaf.png)](https://github.com/splitbrain/rpibplusleaf)
 # Max6675
+# Max6675
