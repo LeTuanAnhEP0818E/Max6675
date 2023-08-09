@@ -1,6 +1,5 @@
 
 import { Gpio } from "onoff";
-import { isArray, verifyGpio } from "./utils";
 
 class Max6675 {
   private unit: number;
@@ -182,3 +181,14 @@ class Max6675 {
   }
 }
 export default Max6675;
+
+export function isArray(obj: number | number[]): boolean {
+    return Object.prototype.toString.call(obj) === "[object Array]";
+    }
+  
+export function verifyGpio(sck: number, cs: number, so: number[]) {
+    const set = new Set(so);
+    set.add(sck);
+    set.add(cs);
+    return set.size === so.length + 2;
+    }
